@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Tablas</title>
+</head>
+<body>
+     <h1>Mis tablas</h1>
+     <hr>
+     <!-- Tabla de Usuario , cellpadding : aumenta la separacion entre el contenido y el borde de las celdas-->
+     <!-- cellspacing : separacion entre celdas -->
+     <!-- <table border="1" cellpadding="10" cellspacing=""> -->
+    
+        <table border="1" cellpadding="10" cellspacing="0">
+         <!-- Primera fila : cabeceras -->
+         <!-- <th> es para que la letra resalte un poco mas -->
+        <tr>
+            <th >ID</th>
+            <th> Nombre </th>
+            <th> Edad </th>
+          
+        </tr>
+      
+        <!--  Segunda fila -->
+        <tr>
+            <td rowspan="2">409992738</td>
+            <td>Freddy De la cruz</td>
+            <td>40</td>
+        </tr>
+        <!-- tercera fila -->
+        <tr>
+            <td>33454554</td>
+            <td>Fiorella</td>
+            <td>33</td>
+        </tr>
+        <!--  cuarta fila (atajo tr>td*3) -->
+        <tr>
+            <td>4453454</td>
+            <td colspan="2">jaime palillo</td>
+            <!-- <td colspan="2"></td> -->
+        </tr>
+     </table>   
+
+</body>
+</html>
+
