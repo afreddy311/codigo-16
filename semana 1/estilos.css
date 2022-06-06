@@ -1,0 +1,54 @@
+/* todas las etiquetas h1 van a tener este estilo */
+h1 {
+    color:green;
+    text-decoration: underline;
+}
+
+h2 {
+    color:blue;
+}
+
+.titles {
+
+    border-radius: 15px;
+    background: rgb(63, 155, 63);
+    color: white;
+}
+
+td {
+    border-radius: 15px;
+    color: green;
+}
+
+#cabecera1 {
+    color: red;
+}
+
+.parrafos_rojos {
+    color: red;
+    font-weight: 600;
+}
+
+p {
+    color:blueviolet;
+}
+
+/* selectores combinados (clase anidada)  */
+p.parrafos_rojos {
+    color:aquamarine;
+}
+
+p#cabecera1 {
+    color:chocolate;
+}
+/* tag+class+id ( combinar de menor a mayor prioridad*/ 
+p.parrafos_rojos#cabecera1 {
+    color:brown;
+}
+
+.vertical {
+    writing-mode :vertical-lr;
+    border-radius: 15px;
+    font-size: 35px;
+    color: green;
+}
