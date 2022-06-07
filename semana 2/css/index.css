@@ -1,0 +1,30 @@
+h1 {
+    /* font-family */
+    /* si una fuente no existe , busca a la siguiente  de izq a derecha*/
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* no va unidades en el font-weight */
+    font-weight: 100;
+    text-decoration: underline;
+}
+.parrafo {
+    font-family: "Dank Mono",monospace;
+    font-size: 100px;
+    /* 700=bold y 900=bolder */
+    font-weight: bold;
+}
+
+.link-a {
+    font-size: 45;
+    font-family: Arial, Helvetica, sans-serif;
+    /* para que el hipervinculo no este subrayado */
+    text-decoration: none;
+
+    /* https://htmlcolorcodes.com/es/ */
+    /* Hexadecimal */
+    /* RGB = Red Green Blue */
+    /* RGBA= Red green blue alpha */
+    /* alpha= opacidad 0-1 */
+    /* hsl = hue saturacion lightness */
+    color: rgb(162, 236, 24);
+}

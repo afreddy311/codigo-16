@@ -15,6 +15,16 @@ h2 {
     color: white;
 }
 
+.titles2 {
+
+    font-size: 20px;
+    text-align: left;
+}
+
+.titles3 {
+    text-align: center;
+}
+
 td {
     border-radius: 15px;
     color: green;
@@ -30,7 +40,7 @@ td {
 }
 
 p {
-    color:blueviolet;
+    color:black;
 }
 
 /* selectores combinados (clase anidada)  */
@@ -52,3 +62,4 @@ p.parrafos_rojos#cabecera1 {
     font-size: 35px;
     color: green;
 }
+
