@@ -2,7 +2,7 @@ h1 {
     /* font-family */
     /* si una fuente no existe , busca a la siguiente  de izq a derecha*/
     font-size: 45px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Righteous' , sans-serif;
     /* no va unidades en el font-weight */
     font-weight: 100;
     text-decoration: underline;
@@ -15,7 +15,7 @@ h1 {
 }
 
 .link-a {
-    font-size: 45;
+    font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     /* para que el hipervinculo no este subrayado */
     text-decoration: none;
@@ -27,4 +27,41 @@ h1 {
     /* alpha= opacidad 0-1 */
     /* hsl = hue saturacion lightness */
     color: rgb(162, 236, 24);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 0.3 es opacidad */
+ul {
+    background-color: rgba(53,146,239,0.3)
+}
+
+.span-1 {
+    text-decoration: overline;
+    background-color: rgba(53,146,239,0.3);
+}
+
+.span-2 {
+    text-decoration: line-through;
+    color: blue;
+    background-color: rgb(177, 79, 79);
+    font-size: 45px;
+
+}
+
+.span-6 {
+    text-transform: lowercase;
+}
+
+@font-face {
+    /* Nombre de la fuente , puede ser cualquier nombre */
+    font-family: "Righteous";
+    /* es el lugar donde esta alojado la fuente */
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+
+.title2 {
+    font-family: "Righteous";
 }

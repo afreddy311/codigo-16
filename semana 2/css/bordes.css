@@ -1,0 +1,98 @@
+/* selectores de etiqueta */
+
+/* html por defecto es 16px , si es que no se especifica */
+html {
+    font-size: 10px;
+}
+
+body {
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 20px; 
+}
+
+h1 {
+    font-size: 2em; /*multiplica lo que diga el body 2*20px*/
+    font-size: 2rem;/*multiplica lo que diga el body 2*10px*(html raiz)*/
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;  /*multiplica lo que diga el body 1.5*20px*/
+}
+
+/* selectores de clase */
+.solid {
+    border-style: solid;
+    border-color: brown;
+    border-width: 5px;
+}
+
+.Dashed {
+    border-style: dashed;
+    border-color: green;
+    border-width: 8px;
+}
+
+.dotted {
+/* /* border: abrevia 3 propiedades en una  */
+border:dotted blue 3px;
+}
+
+.hidden {
+    border-style: hidden;
+    border-color: blue;
+    border-width: 10px;
+}
+.double {
+    border-style: double;
+    border-color: blueviolet;
+    border-width: 15px;
+}
+.groove {
+    border-style: groove;
+    border-color: darkkhaki;
+    border-width: 20px;
+}
+.inherit {
+    border-style: inherit;
+    border-color: darksalmon;
+    border-width: 25 px;
+}
+.initial {
+    border-style: initial;
+    border-color: darkgoldenrod;
+    border-width: 30px;
+}
+
+#bnuevo:hover {
+    color: blue;
+    border-style: hidden;
+}
+
+.left_solid {
+border-left: solid red 2px;
+}
+
+.top-dashed {
+    border-top: dashed 2px gray;
+}
+
+.bottom-dashed {
+    border-bottom: dashed 2px green;
+}
+
+/* en sentido horario le asigna css a cada borde . Empieza en borde de arriba */
+
+.mix-left-top {
+    border-style: solid none none dotted;
+    border-width: 4px 0px 0px 3px;
+    border-color: blue red red black;
+
+}
+
+/* en selector combinado el selector mas abajo es el que toma el html*/
+.small {
+    font-size: 0.6em;
+}

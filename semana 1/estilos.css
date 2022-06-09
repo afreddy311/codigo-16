@@ -8,17 +8,26 @@ h2 {
     color:blue;
 }
 
+@font-face {
+    /* Nombre de la fuente , puede ser cualquier nombre */
+    font-family: "Righteous";
+    /* es el lugar donde esta alojado la fuente */
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+
 .titles {
 
     border-radius: 15px;
     background: rgb(63, 155, 63);
     color: white;
+    
 }
 
 .titles2 {
 
     font-size: 20px;
     text-align: left;
+    font-family: "Righteous";
 }
 
 .titles3 {
