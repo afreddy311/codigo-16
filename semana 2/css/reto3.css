@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka" , "Outfit";
+  }
+
+
+.contenedor {
+    background-color:  #1c253f;
+    height: 100vh;
+  }
+
+.contenedor-interno {
+   
+    width: 800px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+h2 {
+    text-align: left;
+    color: white;
+}  
+
+img {
+    width: 100px;
+    height: 100px;
+    /* el border radius debe ser desde 50 para arriba para que salga redondo */
+    border-radius: 800px;
+    overflow: hidden;
+           
+}
+
+.table1 {
+    width: 100%;
+  
+}
+
+.table2 {
+    margin-top: 20px;
+    background-color: #22326b;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.textperfil {
+    color: white;
+}
+
+#search {
+    background-color: #0d6efd;
+    color: white;
+    font-family: inherit;
+    line-height: 1.5;
+    padding: 4px 10px; /* margen para el placeholder */
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    border: none;  
+    outline: none;  /* para que no salga borde cuando haces click */
+    
+}
+
+#input1 {
+    font-family: inherit;
+    line-height: 1.5;
+    padding: 4px 10px; /* margen para el placeholder */
+    font-size: 1rem;
+    width: 95%;
+    border-radius: 10px;
+    border: none;  
+    outline: none;  /* para que no salga borde cuando haces click */
+}
+

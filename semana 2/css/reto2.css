@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  .contenedor {
+    border: solid red;
+    background-color:  hsl(217, 54%, 11%);
+    height: 100vh;
+  }
+  
+  .contenedor-interno {
+    border: solid green;
+    width: 375px;
+    background-color: hsl(216, 50%, 16%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Aca estamos diciendo que queremos aplicar el
+  estilo a cada element que este dentro este div
+  * es igual Todo */
+  .contenedor-interno * {
+    margin-top: 16px;
+  }
+  
+  /* last-child => Vamos a obtener el ultimo elmento */
+  /* 5 <p> */
+  /* Tomaria la ultima p */
+  /* p:last-child {
+  
+  } */
+  /* .contenedor-interno:last-child {
+    border: solid;
+    margin-bottom: 20px;
+  } */
+  
+  .alin-izq {
+    text-align: left;;
+  }
+  
+  h2 {
+    width: 345px;
+    margin: auto;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+  }
+  
+  p {
+    
+    width: 345px;
+    border: solid blue;
+    margin: auto;
+    margin-bottom: 20px;
+    color:  hsl(0, 0%, 100%);
+    text-align: left;
+  }
+
+  .hr {
+      color: hsl(215, 32%, 27%);
+  }
+
+ .contenedor1 {
+     float: left;
+
+ }
+ .contenedor2 {
+     float: right;
+ }
+
+ .p1 {
+   color:  hsl(178, 100%, 50%);
+ }
+
+ .p3 {
+    color :hsl(215, 51%, 70%);
+ }
+
+ .p2 {
+     color: white;
+ }
+
+ .subirtexto {
+     border: solid yellow;
+     
+ }
+
