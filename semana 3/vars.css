@@ -1,0 +1,8 @@
+:root {
+    --primer-color: #30d361 ;
+    --seguundo-color: #abc123;
+
+    --texto-pequeno:1.2rem;
+    --texto-mediano:1.4rem;
+    --texto-grande:1.6rem;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .red {
+            color:red;
+        }
+        .green {
+            color: green;
+        }
+        .azul {
+            color: blue;
+        }
+    </style>
+    <title>Reto1</title>
+</head>
+<body>
+       
+</body>
+<script type="text/javascript">
+
+let Nombre=String(prompt("ingrese su nombre"))
+let Sexo=String(prompt("ingrese su sexo"))
+let Edad=Number(prompt("ingrese su edad"))
+let Nota=Number(prompt("ingrese su nota"))
+let calificacion= ""
+
+document.write("<h2>" + Nombre + "</h2>");
+document.write("<h2>" + Sexo + "</h2>");
+document.write("<h2>" + Edad + "</h2>");
+document.write("<h2>" + Nota + "</h2>");
+
+
+
+if (Nota>=0 && Nota<3) {
+    calificacion=String("<span class='red'>"  + "Muy Deficiente" + "</span>");    
+} else if(Nota>=3 && Nota<5){
+    calificacion=String("<span class='azul'>"  + "Insuficiente"  + "</span>");
+} else if(Nota>=5 && Nota<6){
+    calificacion=String("<span class='azul'>"  + "Suficiente"  + "</span>");
+} else if(Nota>=6 && Nota<7){
+    calificacion=String("<span class='azul'>"  + "Bien"  + "</span>");
+} else if(Nota>=7 && Nota<9){
+    calificacion=String("<span class='azul'>"  + "Notable"  + "</span>");
+} else if(Nota>=9 && Nota<=10){
+    calificacion=String("<span class='green'>"  + "Sobresaliente"  + "</span>");
+}
+
+
+if (Sexo == "hombre" && Edad>35) {
+    document.write( "<span>" + "El Sr." + " " + Nombre + " " + "(" + Edad + " " + "años"+")"+" "+"tiene"+" "+Nota+" "+"de nota.Es"+" "+ calificacion + "</span>")
+} else if(Sexo == "hombre" && Edad<=35) {
+    document.write("El Joven" + " " + Nombre + " " + "(" + Edad + " " + "años"+")"+" "+"tiene"+" "+Nota+" "+"de nota.Es"+" "+ calificacion)
+} else if(Sexo == "mujer" && edad>50){
+    document.write("La Sra." + " " + Nombre + " " + "(" + Edad + " " + "años"+")"+" "+"tiene"+" "+Nota+" "+"de nota.Es"+" "+ calificacion)
+} else if(Sexo == "mujer" && edad<=50){
+    document.write("La Srta." + " " + Nombre + " " + "(" + Edad + " " + "años"+")"+" "+"tiene"+" "+Nota+" "+"de nota.Es"+" "+ calificacion)
+} else {
+    document.write("ingrese bien sus datos")
+}
+
+</script>
+
+</html>

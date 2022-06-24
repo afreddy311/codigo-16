@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+    <style>
+        #container {
+            width:300px;
+            min-height: 100px;
+            background-color: #ddd;
+            margin: 20px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>    
+    
+</body>
+<script>
+    //document.getElementById()
+
+    const div_container=document.getElementById('container');
+    div_container.innerHTML="<h1>Hola a Todos</h1>";
+    // div_container.innerText="<h1>Hola a Todos</h1>";
+    // +=(numeros) suma al valor actual
+    // +=(string)/cadena) concatena sobre el valor actual
+   
+    let frutas = ['pera', 'manzana','limon','fresa','naranja'];
+    let iter=0;
+    while (iter<frutas.length) {
+        div_container.innerHTML+="<p>" + frutas[iter] + "</p>" 
+        
+        if (frutas[iter]=='limon'){
+            break;
+        }
+        iter += 1; // tambien puede ser iter++
+    }
+    div_container.innerHTML += "<hr>";
+    
+    for (let iter=0; iter < frutas.length;iter++) {
+        if (frutas[iter]=="limon"){
+            continue;
+        }      
+        div_container.innerHTML+="<p>" + frutas[iter] + "</p>"
+
+    }
+
+    div_container.innerHTML += "<hr>";
+    //productos es un objeto iterable del tipo array 
+    let productos = [ 
+        'mouse',
+        'teclado',
+        'parlante',
+        'monitor',
+        'celular',
+        'adaptador',
+        'cargador',
+        ];
+
+        //for(var iter of objetoiterable) {...}
+        for (let x of productos) {
+            div_container.innerHTML += "<p> -" + x + "</p>";
+        }
+
+        // con "in" itera los indices del objeto array o tambien los valores
+        for (let x in productos) {
+            div_container.innerHTML += "<p> -" + x + "</p>";
+        }
+
+        for (let x in productos) {
+            div_container.innerHTML += "<p> -" + productos[x] + "</p>";
+        }
+
+        div_container.innerHTML += "<hr>";
+
+        const frase="Amo programar"
+        for (let letra of frase) {
+            if (letra==" ") continue;
+            div_container.innerHTML += "<p> -" + letra + "</p>";
+        }    
+
+
+    //break : rompe el ciclo completo.
+    //continue: rompe solo el ciclo actual , pero el bucle continua
+</script>
+</html>
