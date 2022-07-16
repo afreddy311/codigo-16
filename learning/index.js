@@ -1,4 +1,7 @@
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//https://www.youtube.com/watch?v=PescFjv1UXM
+
+1  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 // let a = prompt('ingrese primer numero ');
 // while (isNaN(a) || a<=0) {
 //   let a = prompt('ingrese primer numero nuevamente')
@@ -27,34 +30,36 @@
 //     document.write('El segundo numero es mayor y el primero menor')
 // }
 
-//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+3  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-let cont=0;
-let rept=0;
+let numeros=[];
+let sum=0;
+let sum1=0;
+
+function Imprimirsuma() {
     let numero = document.querySelector("#ingresar_numero");
-    let a = numero.value
-    let Sumar = () => {
-    while (isNaN(a)||!isNaN(a)) {      
-    
-    if (isNaN(a)){
+    let numero1 = numero.value;
+   
+    if (isNaN(numero1)){
         alert('ingrese un numero correctamente');
+        
+    
+    } else if (!isNaN(numero1)) {
+        numeros.push=numero1;
+        for (let x of numeros){
+            sum1 = sum1+sum
+        }
+    } else  (numero1<0) 
+        document.write(numeros);
         return;
-    }
-    
-    if (a<0) {
-        let prom = rept / (cont)    
-        document.write("La suma de los num ingresados es "+ rept + " Y el promedio es " + prom)
-        break;  
-    }
-
-    if (!isNaN(a)) {
-    cont+=1;
-    rept =rept + a; }   
-    
-    } 
+       
 }
 
 
+
+
+
     
+
 
 
