@@ -64,6 +64,19 @@
 
 4 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+function NumerosEntre2numeros(){
+    let numero1 = document.querySelector("#primernumero");
+    let num1=numero1.value;
+    let numero2 = document.querySelector("#segundonumero");
+    let num2=numero2.value;
+    const result = document.querySelector(".NumerosEntre2numeros");
+    console.log(num1);
+    for(x=num1;x=num2;x+=1) {
+    result.innerHTML= "<span> los numeros entre estos 2 numeros son " + x + "</span> , ";
+    }
+ 
+
+}   
 
 
 
